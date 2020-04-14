@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+  #before a user is created, we don't want to allow show edit update or destroy
 
   # GET /users
   # GET /users.json
