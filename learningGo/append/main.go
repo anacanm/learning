@@ -23,3 +23,4 @@ func main() {
 		fmt.Println("C: ", c[i], &c[i])
 	}
 }
+
