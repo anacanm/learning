@@ -6,7 +6,8 @@ import (
 )
 
 func handlerFunc(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w, "<h1>Welcome to my first Go website!</h1>")
+	w.Header().Set("Content-Type", "text/html")
+	fmt.Fprint(w, "<h1>Set Content Headers!</h1>")
 }
 
 func main() {
