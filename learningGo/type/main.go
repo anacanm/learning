@@ -31,6 +31,7 @@ func main() {
 	PrintHour(h)
 	var i int
 	i = 15
+	// the below line won't work because PrintHour calls for an Hour type and there are no implicit type conversions
 	PrintHour(i)
 }
 
